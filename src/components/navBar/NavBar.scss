@@ -1,0 +1,28 @@
+.left-pane {
+	width:100px;
+	background-color:#162441;
+	color:#fff;
+	height:100%;
+	font-size:12px;
+	font-weight:300;
+	float:left;
+  display:table-cell;
+  
+  .quick-links {
+    width:100px;
+    text-align:center;
+    padding:20px 0;
+
+    &:hover {
+      background-color:#5fcac1;
+      color:#162441;
+      transition: all .3s ease;
+    }
+
+    i {
+      font-size:30px;
+      display:block;
+      margin-bottom:10px;
+    }
+  }
+}
