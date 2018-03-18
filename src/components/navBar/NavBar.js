@@ -1,35 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './NavBar.css';
 
-class NavBar extends Component {
-  render() {
-    return (
-      <div className="left-pane full-height">
-        <div className="quick-links">
-          <a>
-            <i className="fa fa-suitcase"></i>
-            Accounts
-          </a>
-        </div>
-        <div className="quick-links">
-          <i className="fa fa-address-book-o"></i>
-          Contacts
-        </div>
-        <div className="quick-links">
-          <i className="fa fa-phone-square"></i>
-          Leads
-        </div>
-        <div className="quick-links">
-          <i className="fa fa-handshake-o"></i>
-          Opportunities
-        </div>
-        <div className="quick-links">
-          <i className="fa fa-cog"></i>
-          Settings
-        </div>
-      </div>
-    )
-  }
-}
+const NavBar = () => (
+  <div className="left-pane full-height">
+    <div className="quick-links">
+      <a href="#">
+        <i className="fa fa-suitcase" />
+        Accounts
+      </a>
+    </div>
+    <div className="quick-links">
+      <i className="fa fa-address-book-o" />
+      Contacts
+    </div>
+    <div className="quick-links">
+      <i className="fa fa-phone-square" />
+      Leads
+    </div>
+    <div className="quick-links">
+      <i className="fa fa-handshake-o" />
+      Opportunities
+    </div>
+    <div className="quick-links">
+      <i className="fa fa-cog" />
+      Settings
+    </div>
+  </div>
+);
 
 export default NavBar;
