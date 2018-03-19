@@ -1,11 +1,11 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-import './App.css';
+import Header from 'containers/header/Header';
+import NavBar from 'containers/navBar/NavBar';
+import MainContainer from 'containers/mainContainer/MainContainer';
 
-import Header from './components/header/Header';
-import NavBar from './components/navBar/NavBar';
-import MainContainer from './components/mainContainer/MainContainer';
+import './App.css';
 
 const App = () => (
   <div className="App full-height">
