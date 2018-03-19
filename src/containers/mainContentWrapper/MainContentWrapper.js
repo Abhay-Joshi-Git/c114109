@@ -1,28 +1,15 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Route } from 'react-router-dom';
+import { Grid } from 'react-bootstrap';
 
-import RecentEmails from 'containers/recentEmails/RecentEmails';
-import WidgetWrapper from 'components/widgetWrapper/WidgetWrapper';
+import Dashboard from 'containers/dashboard/Dashboard.js';
+import customerAccounts from 'containers/customer/accounts/CustomerAccounts';
 import './MainContentWrapper.css';
 
 const MainContentWrapper = () => (
   <Grid fluid>
-    <Row>
-      <Col md={6} className="unit-column">
-        <RecentEmails />
-      </Col>
-      <Col md={6} className="unit-column">
-        <WidgetWrapper />
-      </Col>
-    </Row>
-    <Row>
-      <Col md={6} className="unit-column">
-        <WidgetWrapper />
-      </Col>
-      <Col md={6} className="unit-column">
-        <WidgetWrapper />
-      </Col>
-    </Row>
+    <Route path="/" exact component={Dashboard} />
+    <Route path="/accounts" exact component={customerAccounts} />
   </Grid>
 );
 
