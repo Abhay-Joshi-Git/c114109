@@ -1,9 +1,9 @@
 import React from 'react';
 
-import UnitContainer from 'containers/unitContainer/UnitContainer';
+import WidgetWrapper from 'containers/widgetWrapper/WidgetWrapper';
 
 const RecentEmails = () => (
-  <UnitContainer />
+  <WidgetWrapper />
 );
 
 export default RecentEmails;

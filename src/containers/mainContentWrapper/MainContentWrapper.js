@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 import RecentEmails from 'containers/functionalModules/recentEmails/RecentEmails';
-import UnitContainer from 'containers/unitContainer/UnitContainer';
+import WidgetWrapper from 'containers/widgetWrapper/WidgetWrapper';
 import './MainContentWrapper.css';
 
 const MainContentWrapper = () => (
@@ -12,15 +12,15 @@ const MainContentWrapper = () => (
         <RecentEmails />
       </Col>
       <Col md={6} className="unit-column">
-        <UnitContainer />
+        <WidgetWrapper />
       </Col>
     </Row>
     <Row>
       <Col md={6} className="unit-column">
-        <UnitContainer />
+        <WidgetWrapper />
       </Col>
       <Col md={6} className="unit-column">
-        <UnitContainer />
+        <WidgetWrapper />
       </Col>
     </Row>
   </Fragment>

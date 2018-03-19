@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 
-import './UnitHeader.css';
+import './WidgetHeader.css';
 
-const UnitHeader = () => (
+const WidgetHeader = () => (
   <Row className="unit-header">
     <div>
       header
@@ -11,4 +11,4 @@ const UnitHeader = () => (
   </Row>
 );
 
-export default UnitHeader;
+export default WidgetHeader;
