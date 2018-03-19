@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-import RecentEmails from 'features/recentEmails/RecentEmails';
+import RecentEmails from 'containers/recentEmails/RecentEmails';
 import WidgetWrapper from 'components/widgetWrapper/WidgetWrapper';
 import './MainContentWrapper.css';
 

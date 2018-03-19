@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-import Header from 'components/header/Header';
-import NavBar from 'components/navBar/NavBar';
-import MainContentWrapper from 'components/mainContentWrapper/MainContentWrapper';
+import Header from 'containers/header/Header';
+import NavBar from 'containers/navBar/NavBar';
+import MainContentWrapper from 'containers/mainContentWrapper/MainContentWrapper';
 
 import './App.css';
 
