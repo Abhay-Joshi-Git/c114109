@@ -4,10 +4,8 @@ import './NavBar.css';
 const NavBar = () => (
   <div className="left-pane full-height">
     <div className="quick-links">
-      <a href="#">
-        <i className="fa fa-suitcase" />
-        Accounts
-      </a>
+      <i className="fa fa-suitcase" />
+      Accounts
     </div>
     <div className="quick-links">
       <i className="fa fa-address-book-o" />

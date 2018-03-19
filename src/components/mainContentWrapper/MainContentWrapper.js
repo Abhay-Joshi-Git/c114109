@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 import RecentEmails from 'features/recentEmails/RecentEmails';
 import WidgetWrapper from 'components/widgetWrapper/WidgetWrapper';
 import './MainContentWrapper.css';
 
 const MainContentWrapper = () => (
-  <Fragment>
+  <Grid fluid>
     <Row>
       <Col md={6} className="unit-column">
         <RecentEmails />
@@ -23,7 +23,7 @@ const MainContentWrapper = () => (
         <WidgetWrapper />
       </Col>
     </Row>
-  </Fragment>
+  </Grid>
 );
 
 export default MainContentWrapper;
