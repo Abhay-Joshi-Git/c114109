@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-import RecentEmails from 'containers/functionalModules/recentEmails/RecentEmails';
-import WidgetWrapper from 'containers/widgetWrapper/WidgetWrapper';
+import RecentEmails from 'features/recentEmails/RecentEmails';
+import WidgetWrapper from 'components/widgetWrapper/WidgetWrapper';
 import './MainContentWrapper.css';
 
 const MainContentWrapper = () => (

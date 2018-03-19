@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WidgetWrapper from 'containers/widgetWrapper/WidgetWrapper';
+import WidgetWrapper from 'components/widgetWrapper/WidgetWrapper';
 
 const RecentEmails = () => (
   <WidgetWrapper />
