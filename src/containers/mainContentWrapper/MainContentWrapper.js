@@ -3,9 +3,9 @@ import { Row, Col } from 'react-bootstrap';
 
 import RecentEmails from 'containers/functionalModules/recentEmails/RecentEmails';
 import UnitContainer from 'containers/unitContainer/UnitContainer';
-import './MainContainer.css';
+import './MainContentWrapper.css';
 
-const MainContainer = () => (
+const MainContentWrapper = () => (
   <Fragment>
     <Row>
       <Col md={6} className="unit-column">
@@ -26,4 +26,4 @@ const MainContainer = () => (
   </Fragment>
 );
 
-export default MainContainer;
+export default MainContentWrapper;

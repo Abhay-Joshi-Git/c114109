@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 
 import Header from 'containers/header/Header';
 import NavBar from 'containers/navBar/NavBar';
-import MainContainer from 'containers/mainContainer/MainContainer';
+import MainContentWrapper from 'containers/mainContentWrapper/MainContentWrapper';
 
 import './App.css';
 
@@ -16,7 +16,7 @@ const App = () => (
           <NavBar />
         </Col>
         <Col md={11}>
-          <MainContainer />
+          <MainContentWrapper />
         </Col>
       </Row>
     </Grid>
