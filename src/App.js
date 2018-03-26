@@ -14,10 +14,10 @@ const App = () => (
       <Header />
       <Grid className="wrapper full-height" fluid>
         <Row className="full-height">
-          <Col md={1} className="full-height left-nav-bar-container">
+          <Col sm={1} className="full-height left-nav-bar-container">
             <NavBar />
           </Col>
-          <Col md={11} className="main-content">
+          <Col sm={11} className="main-content">
             <MainContentWrapper />
           </Col>
         </Row>
