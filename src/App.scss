@@ -2,9 +2,13 @@ html {
   height: 100%;
 }
 
-#root, body {
-  height: 98%;
+body {
+  height: 97%;
   font-family: sans-serif;
+}
+
+#root {
+  height: 99%;
 }
 
 .App-logo {
@@ -35,12 +39,14 @@ html {
   max-width: 90px;
 }
 
-.left-nav-bar-container.col-md-1 {
-  width: calc(7% - 15px);  
+.left-nav-bar-container.col-sm-1 {
+  width: calc(7%);  
 }
 
 .main-content {
-  &.col-md-11 {
-    width: calc(92.67% - 15px);
+  &.col-sm-11 {
+    width: calc(93%);
   }
+  padding-left: 0px;
+  padding-right: 0px;
 }

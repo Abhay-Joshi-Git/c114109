@@ -1,0 +1,22 @@
+.page-header-options-container {
+  padding: 10px 3px;
+}
+
+.page-filter-dropdown button {
+  border: none;
+  background: inherit !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding-left: 0px;
+  padding-bottom: 1px;
+
+  &:hover {
+    background: inherit !important;
+  }
+}
+
+.options-filter button {
+  span.caret {
+    display: none;
+  }
+}

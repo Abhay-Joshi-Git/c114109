@@ -1,7 +1,28 @@
+$spacer: 1rem;
+
 .full-height {
   height: 100%;
 }
 
 .full-width {
   width: 100%;
+}
+
+/* spacing */
+
+.pl-3 {
+  padding-left: $spacer !important;
+}
+
+.pr-3 {
+  padding-right: $spacer !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+/* display */
+.dis-i-b {
+  display: inline-block;
 }
