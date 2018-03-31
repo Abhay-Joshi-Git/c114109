@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Row, Col, Dropdown, MenuItem } from 'react-bootstrap';
+import { Row, Col, Dropdown, MenuItem, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import find from 'lodash/find';
 
@@ -86,6 +86,19 @@ class PageHeader extends React.Component {
           <Col sm={4}>
             {this.getDataFilterDropDown(this.props.filterDropdown)}
             {this.getPageOptionsDropDown()}
+          </Col>
+          <Col sm={4} smOffset={4} className="pt-2 buttons-container">
+            <div className="pull-right">
+              <Button className="bg-secondary">
+                <i className="fa fa-upload pr-3" />Export
+              </Button>
+              <Button className="bg-secondary">
+                <i className="fa fa-download pr-3" />Import File
+              </Button>
+              <Button bsStyle="primary">
+                Create Account
+              </Button>
+            </div>
           </Col>
         </Row>
       </Fragment>

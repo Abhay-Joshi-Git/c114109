@@ -18,6 +18,14 @@ $spacer: 1rem;
   padding-right: $spacer !important;
 }
 
+.pt-3 {
+  padding-top: $spacer !important;
+}
+
+.pt-2 {
+  padding-top: $spacer * 0.5 !important;
+}
+
 .p-3 {
   padding: $spacer !important;
 }
