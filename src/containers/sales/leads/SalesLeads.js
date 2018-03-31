@@ -1,5 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import GridPage from 'components/gridPage/GridPage';
+import actions from '../_store/actions';
 
 const dataFilterOptions = [
   {
@@ -12,24 +16,37 @@ const dataFilterOptions = [
   },
 ];
 
-const SalesLeads = () => {
-  const PageOptions = {
-    headerOptions: {
-      filterDropdown: {
-        caption: 'Leads Filter',
-        filterOptions: dataFilterOptions,
-        selectedDataFilterOption: 'open',
-      },
-      pageCaption: 'Sales / Leads',
+const PageOptions = {
+  headerOptions: {
+    filterDropdown: {
+      caption: 'Leads Filter',
+      filterOptions: dataFilterOptions,
+      selectedDataFilterOption: 'open',
     },
-  };
-
-  return (
-    <Fragment>
-      <GridPage {...PageOptions} />
-    </Fragment>
-  );
+    pageCaption: 'Sales / Leads',
+  },
 };
 
+class SalesLeads extends Component {
+  componentDidMount() {
+    this.props.fetchLeads();
+  }
 
-export default SalesLeads;
+  render() {
+    return (
+      <Fragment>
+        <GridPage {...PageOptions} />
+      </Fragment>
+    );
+  }
+}
+
+SalesLeads.propTypes = {
+  fetchLeads: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => ({
+  leads: state.sales.leads,
+});
+
+export default connect(mapStateToProps, { ...actions })(SalesLeads);
