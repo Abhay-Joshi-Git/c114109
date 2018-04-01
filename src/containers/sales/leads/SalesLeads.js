@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import GridPage from 'components/gridPage/GridPage';
 import actions from '../_store/actions';
+import selectors from '../_store/selectors';
 
 const dataFilterOptions = [
   {
@@ -73,19 +74,8 @@ SalesLeads.defaultProps = {
   leads: [],
 };
 
-const mapStateToProps = (state) => {
-  const leadsData = Object.values(state.sales.leads);
-
-  return {
-    leads: leadsData && leadsData.length ?
-      leadsData.map(item => ({
-        contactName: `${item.first_name} ${item.last_name}`,
-        contactEmail: item.email_address,
-        mobileNumber: item.mobile_no,
-        dateCreated: item.date_created,
-        dateModified: item.date_modified,
-      })) : [],
-  };
-};
+const mapStateToProps = state => ({
+  leads: selectors.leads(state),
+});
 
 export default connect(mapStateToProps, { ...actions })(SalesLeads);
