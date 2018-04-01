@@ -21,7 +21,7 @@ const App = () => (
             <Col sm={1} className="full-height left-nav-bar-container">
               <NavBar />
             </Col>
-            <Col sm={11} className="main-content">
+            <Col sm={11} className="main-content full-height">
               <MainContentWrapper />
             </Col>
           </Row>

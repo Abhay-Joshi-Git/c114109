@@ -15,13 +15,13 @@ const Header = () => (
         <NavItem href="/">
           Dashboard
         </NavItem>
-        <NavDropdown title="Customers">
+        <NavDropdown title="Customers" id="nav-dropdown-customers">
           <MenuItem href="/accounts">Accounts</MenuItem>
           <MenuItem href="/contacts">Contacts</MenuItem>
           <MenuItem href="/magento-customers">Magento Customers</MenuItem>
           <MenuItem href="/business-customers">Business Customers</MenuItem>
         </NavDropdown>
-        <NavDropdown title="Sales">
+        <NavDropdown title="Sales" id="nav-dropdown-sales">
           <MenuItem href="/leads">Leads</MenuItem>
           <MenuItem href="/opportunities">Opportunities</MenuItem>
         </NavDropdown>

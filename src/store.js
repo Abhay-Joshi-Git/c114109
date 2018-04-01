@@ -13,6 +13,6 @@ const store = createStore(
   rootReducer,
   applyMiddleware(sagaMiddleware),
 );
-sagaMiddleware.run(salesSagas);
+sagaMiddleware.run(salesSagas.fetchLeadsWatcher);
 
 export default store;

@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -27,6 +27,29 @@ const PageOptions = {
   },
 };
 
+const leadsColumns = [
+  {
+    Header: 'Contact Name',
+    accessor: 'contactName',
+  },
+  {
+    Header: 'Contact Email',
+    accessor: 'contactEmail',
+  },
+  {
+    Header: 'Contact Phone',
+    accessor: 'mobileNumber',
+  },
+  {
+    Header: 'Created At',
+    accessor: 'dateCreated',
+  },
+  {
+    Header: 'Updated At',
+    accessor: 'dateModified',
+  },
+];
+
 class SalesLeads extends Component {
   componentDidMount() {
     this.props.fetchLeads();
@@ -34,19 +57,35 @@ class SalesLeads extends Component {
 
   render() {
     return (
-      <Fragment>
-        <GridPage {...PageOptions} />
-      </Fragment>
+      <div className="full-height">
+        <GridPage {...PageOptions} data={this.props.leads} columns={leadsColumns} />
+      </div>
     );
   }
 }
 
 SalesLeads.propTypes = {
   fetchLeads: PropTypes.func.isRequired,
+  leads: PropTypes.arrayOf(PropTypes.object),
 };
 
-const mapStateToProps = state => ({
-  leads: state.sales.leads,
-});
+SalesLeads.defaultProps = {
+  leads: [],
+};
+
+const mapStateToProps = (state) => {
+  const leadsData = Object.values(state.sales.leads);
+
+  return {
+    leads: leadsData && leadsData.length ?
+      leadsData.map(item => ({
+        contactName: `${item.first_name} ${item.last_name}`,
+        contactEmail: item.email_address,
+        mobileNumber: item.mobile_no,
+        dateCreated: item.date_created,
+        dateModified: item.date_modified,
+      })) : [],
+  };
+};
 
 export default connect(mapStateToProps, { ...actions })(SalesLeads);

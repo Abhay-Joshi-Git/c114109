@@ -6,7 +6,7 @@ const leadsInitialState = [];
 const leadsReducer = (state = leadsInitialState, action) => {
   switch (action.type) {
     case types.FETCH_LEADS_SUCCESS:
-      return [...action.payload];
+      return { ...action.payload };
 
     default:
       return state;

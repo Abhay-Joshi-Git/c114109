@@ -3,9 +3,8 @@ import types from './types';
 import apis from '../apis';
 
 function* fetchLeads() {
-  console.log('fetching leads...');
-  yield apis.fetchLeads();
-  yield put({ type: types.FETCH_LEADS_SUCCESS });
+  const leads = yield apis.fetchLeads();
+  yield put({ type: types.FETCH_LEADS_SUCCESS, payload: leads.data });
 }
 
 function* fetchLeadsWatcher() {
