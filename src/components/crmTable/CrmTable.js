@@ -5,14 +5,22 @@ import PropTypes from 'prop-types';
 
 import './CrmTable.css';
 
-const CrmTable = props => (
-  <ReactTable
-    data={props.data}
-    columns={props.columns}
-    defaultPageSize={props.pageSize}
-    className="-highlight table-content"
-  />
-);
+const CrmTable = (props) => {
+  const columnProps = props.columns.map(col => ({
+    headerClassName: 'crm-header-cell',
+    ...col,
+  }));
+
+  return (
+    <ReactTable
+      data={props.data}
+      columns={columnProps}
+      defaultPageSize={props.pageSize}
+      className="-highlight table-content"
+    />
+  );
+};
+
 
 CrmTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
