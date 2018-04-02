@@ -7,7 +7,7 @@ const Header = () => (
   <Navbar className="main-header-navbar">
     <Navbar.Header>
       <Navbar.Brand>
-        <Link to="/accounts" className="logo" />
+        <Link to="/" className="logo" />
       </Navbar.Brand>
     </Navbar.Header>
     <Navbar.Collapse>
