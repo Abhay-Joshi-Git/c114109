@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import './PageBreadCrumbs.css';
+import './PageBreadCrumbs.scss';
 
 const PageBreadCrumbs = props => (
   <Row className="page-breadcrumb-container">

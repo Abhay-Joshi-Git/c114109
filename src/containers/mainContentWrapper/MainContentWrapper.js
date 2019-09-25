@@ -5,7 +5,7 @@ import { Grid } from 'react-bootstrap';
 import Dashboard from 'containers/dashboard/Dashboard.js';
 import customerAccounts from 'containers/customer/accounts/CustomerAccounts';
 import SalesLeads from 'containers/sales/leads/SalesLeads';
-import './MainContentWrapper.css';
+import './MainContentWrapper.scss';
 
 const MainContentWrapper = () => (
   <Grid fluid className="full-height">

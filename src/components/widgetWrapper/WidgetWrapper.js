@@ -2,7 +2,7 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-import './WidgetWrapper.css';
+import './WidgetWrapper.scss';
 import WidgetHeader from './widgetHeader/WidgetHeader';
 
 const WidgetWrapper = props => (

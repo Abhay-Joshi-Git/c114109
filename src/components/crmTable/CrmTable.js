@@ -3,7 +3,7 @@ import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import PropTypes from 'prop-types';
 
-import './CrmTable.css';
+import './CrmTable.scss';
 
 const CrmTable = (props) => {
   const columnProps = props.columns.map(col => ({

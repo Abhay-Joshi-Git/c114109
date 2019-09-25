@@ -2,7 +2,7 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-import './WidgetHeader.css';
+import './WidgetHeader.scss';
 
 const WidgetHeader = props => (
   <Row className="widget-header">

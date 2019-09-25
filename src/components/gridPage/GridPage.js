@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import PageHeader from 'components/pageHeader/PageHeader';
 import CrmTable from 'components/crmTable/CrmTable';
 
-import './GridPage.css';
+import './GridPage.scss';
 
 const GridPage = props => (
   <Grid fluid className="full-height">

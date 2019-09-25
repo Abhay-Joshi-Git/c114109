@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import find from 'lodash/find';
 
 import PageBreadCrumbs from 'components/pageBreadCrumbs/PageBreadCrumbs';
-import './PageHeader.css';
+import './PageHeader.scss';
 
 class PageHeader extends React.Component {
   constructor(props) {

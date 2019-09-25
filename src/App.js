@@ -9,7 +9,7 @@ import MainContentWrapper from 'containers/mainContentWrapper/MainContentWrapper
 
 import store from './store';
 
-import './App.css';
+import './App.scss';
 
 const App = () => (
   <Provider store={store}>

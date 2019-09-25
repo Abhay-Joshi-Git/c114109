@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './Header.scss';
 
 const Header = () => (
   <Navbar className="main-header-navbar">
